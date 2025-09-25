@@ -14,6 +14,3 @@ State bucket must be created by hands BEFORE the `terraform init` called.
 * `terraform apply`
 * `terraform destroy`
 
-# TL;DR 
-
-You can check `quick_check.pdf` for quick checking hw;
