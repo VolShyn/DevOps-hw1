@@ -1,0 +1,187 @@
+[0m[1mgoogle_storage_bucket.bucket: Refreshing state... [id=test-bucket-424-9b123][0m
+[0m[1mgoogle_bigquery_dataset.dataset: Refreshing state... [id=projects/composed-sun-467220-e1/datasets/dataset_394839482][0m
+[0m[1mgoogle_compute_instance.vm: Refreshing state... [id=projects/composed-sun-467220-e1/zones/us-central1-c/instances/instance-20250925-203432][0m
+
+Terraform used the selected providers to generate the following execution
+plan. Resource actions are indicated with the following symbols:
+  [31m-[0m destroy[0m
+
+Terraform will perform the following actions:
+
+[1m  # google_bigquery_dataset.dataset[0m will be [1m[31mdestroyed[0m
+[0m  [31m-[0m[0m resource "google_bigquery_dataset" "dataset" {
+      [31m-[0m[0m creation_time                   = 1758837861462 [90m-> null[0m[0m
+      [31m-[0m[0m dataset_id                      = "dataset_394839482" [90m-> null[0m[0m
+      [31m-[0m[0m default_partition_expiration_ms = 0 [90m-> null[0m[0m
+      [31m-[0m[0m default_table_expiration_ms     = 0 [90m-> null[0m[0m
+      [31m-[0m[0m delete_contents_on_destroy      = true [90m-> null[0m[0m
+      [31m-[0m[0m effective_labels                = {
+          [31m-[0m[0m "goog-terraform-provisioned" = "true"
+        } [90m-> null[0m[0m
+      [31m-[0m[0m etag                            = "zh65jCpbTR3UjHeDOMR6Kg==" [90m-> null[0m[0m
+      [31m-[0m[0m id                              = "projects/composed-sun-467220-e1/datasets/dataset_394839482" [90m-> null[0m[0m
+      [31m-[0m[0m is_case_insensitive             = false [90m-> null[0m[0m
+      [31m-[0m[0m labels                          = {} [90m-> null[0m[0m
+      [31m-[0m[0m last_modified_time              = 1758837861462 [90m-> null[0m[0m
+      [31m-[0m[0m location                        = "US" [90m-> null[0m[0m
+      [31m-[0m[0m max_time_travel_hours           = "168" [90m-> null[0m[0m
+      [31m-[0m[0m project                         = "composed-sun-467220-e1" [90m-> null[0m[0m
+      [31m-[0m[0m resource_tags                   = {} [90m-> null[0m[0m
+      [31m-[0m[0m self_link                       = "https://bigquery.googleapis.com/bigquery/v2/projects/composed-sun-467220-e1/datasets/dataset_394839482" [90m-> null[0m[0m
+      [31m-[0m[0m terraform_labels                = {
+          [31m-[0m[0m "goog-terraform-provisioned" = "true"
+        } [90m-> null[0m[0m
+        [90m# (4 unchanged attributes hidden)[0m[0m
+
+      [31m-[0m[0m access {
+          [31m-[0m[0m role           = "OWNER" [90m-> null[0m[0m
+          [31m-[0m[0m user_by_email  = "djevl333@gmail.com" [90m-> null[0m[0m
+            [90m# (4 unchanged attributes hidden)[0m[0m
+        }
+      [31m-[0m[0m access {
+          [31m-[0m[0m role           = "OWNER" [90m-> null[0m[0m
+          [31m-[0m[0m special_group  = "projectOwners" [90m-> null[0m[0m
+            [90m# (4 unchanged attributes hidden)[0m[0m
+        }
+      [31m-[0m[0m access {
+          [31m-[0m[0m role           = "READER" [90m-> null[0m[0m
+          [31m-[0m[0m special_group  = "projectReaders" [90m-> null[0m[0m
+            [90m# (4 unchanged attributes hidden)[0m[0m
+        }
+      [31m-[0m[0m access {
+          [31m-[0m[0m role           = "WRITER" [90m-> null[0m[0m
+          [31m-[0m[0m special_group  = "projectWriters" [90m-> null[0m[0m
+            [90m# (4 unchanged attributes hidden)[0m[0m
+        }
+    }
+
+[1m  # google_compute_instance.vm[0m will be [1m[31mdestroyed[0m
+[0m  [31m-[0m[0m resource "google_compute_instance" "vm" {
+      [31m-[0m[0m can_ip_forward       = false [90m-> null[0m[0m
+      [31m-[0m[0m cpu_platform         = "Intel Broadwell" [90m-> null[0m[0m
+      [31m-[0m[0m current_status       = "RUNNING" [90m-> null[0m[0m
+      [31m-[0m[0m deletion_protection  = false [90m-> null[0m[0m
+      [31m-[0m[0m effective_labels     = {
+          [31m-[0m[0m "goog-terraform-provisioned" = "true"
+        } [90m-> null[0m[0m
+      [31m-[0m[0m enable_display       = false [90m-> null[0m[0m
+      [31m-[0m[0m id                   = "projects/composed-sun-467220-e1/zones/us-central1-c/instances/instance-20250925-203432" [90m-> null[0m[0m
+      [31m-[0m[0m instance_id          = "224781883911176840" [90m-> null[0m[0m
+      [31m-[0m[0m label_fingerprint    = "vezUS-42LLM=" [90m-> null[0m[0m
+      [31m-[0m[0m labels               = {} [90m-> null[0m[0m
+      [31m-[0m[0m machine_type         = "e2-micro" [90m-> null[0m[0m
+      [31m-[0m[0m metadata             = {} [90m-> null[0m[0m
+      [31m-[0m[0m metadata_fingerprint = "bFe_L-RVI7g=" [90m-> null[0m[0m
+      [31m-[0m[0m name                 = "instance-20250925-203432" [90m-> null[0m[0m
+      [31m-[0m[0m project              = "composed-sun-467220-e1" [90m-> null[0m[0m
+      [31m-[0m[0m resource_policies    = [] [90m-> null[0m[0m
+      [31m-[0m[0m self_link            = "https://www.googleapis.com/compute/v1/projects/composed-sun-467220-e1/zones/us-central1-c/instances/instance-20250925-203432" [90m-> null[0m[0m
+      [31m-[0m[0m tags                 = [] [90m-> null[0m[0m
+      [31m-[0m[0m tags_fingerprint     = "42WmSpB8rSM=" [90m-> null[0m[0m
+      [31m-[0m[0m terraform_labels     = {
+          [31m-[0m[0m "goog-terraform-provisioned" = "true"
+        } [90m-> null[0m[0m
+      [31m-[0m[0m zone                 = "us-central1-c" [90m-> null[0m[0m
+        [90m# (3 unchanged attributes hidden)[0m[0m
+
+      [31m-[0m[0m boot_disk {
+          [31m-[0m[0m auto_delete                = true [90m-> null[0m[0m
+          [31m-[0m[0m device_name                = "persistent-disk-0" [90m-> null[0m[0m
+          [31m-[0m[0m mode                       = "READ_WRITE" [90m-> null[0m[0m
+          [31m-[0m[0m source                     = "https://www.googleapis.com/compute/v1/projects/composed-sun-467220-e1/zones/us-central1-c/disks/instance-20250925-203432" [90m-> null[0m[0m
+            [90m# (4 unchanged attributes hidden)[0m[0m
+
+          [31m-[0m[0m initialize_params {
+              [31m-[0m[0m enable_confidential_compute = false [90m-> null[0m[0m
+              [31m-[0m[0m image                       = "https://www.googleapis.com/compute/v1/projects/debian-cloud/global/images/debian-11-bullseye-v20250915" [90m-> null[0m[0m
+              [31m-[0m[0m labels                      = {} [90m-> null[0m[0m
+              [31m-[0m[0m provisioned_iops            = 0 [90m-> null[0m[0m
+              [31m-[0m[0m provisioned_throughput      = 0 [90m-> null[0m[0m
+              [31m-[0m[0m resource_manager_tags       = {} [90m-> null[0m[0m
+              [31m-[0m[0m resource_policies           = [] [90m-> null[0m[0m
+              [31m-[0m[0m size                        = 10 [90m-> null[0m[0m
+              [31m-[0m[0m type                        = "pd-standard" [90m-> null[0m[0m
+                [90m# (1 unchanged attribute hidden)[0m[0m
+            }
+        }
+
+      [31m-[0m[0m network_interface {
+          [31m-[0m[0m internal_ipv6_prefix_length = 0 [90m-> null[0m[0m
+          [31m-[0m[0m name                        = "nic0" [90m-> null[0m[0m
+          [31m-[0m[0m network                     = "https://www.googleapis.com/compute/v1/projects/composed-sun-467220-e1/global/networks/default" [90m-> null[0m[0m
+          [31m-[0m[0m network_ip                  = "10.128.0.3" [90m-> null[0m[0m
+          [31m-[0m[0m queue_count                 = 0 [90m-> null[0m[0m
+          [31m-[0m[0m stack_type                  = "IPV4_ONLY" [90m-> null[0m[0m
+          [31m-[0m[0m subnetwork                  = "https://www.googleapis.com/compute/v1/projects/composed-sun-467220-e1/regions/us-central1/subnetworks/default" [90m-> null[0m[0m
+          [31m-[0m[0m subnetwork_project          = "composed-sun-467220-e1" [90m-> null[0m[0m
+            [90m# (3 unchanged attributes hidden)[0m[0m
+
+          [31m-[0m[0m access_config {
+              [31m-[0m[0m nat_ip                 = "35.188.69.152" [90m-> null[0m[0m
+              [31m-[0m[0m network_tier           = "PREMIUM" [90m-> null[0m[0m
+                [90m# (1 unchanged attribute hidden)[0m[0m
+            }
+        }
+
+      [31m-[0m[0m scheduling {
+          [31m-[0m[0m automatic_restart           = true [90m-> null[0m[0m
+          [31m-[0m[0m min_node_cpus               = 0 [90m-> null[0m[0m
+          [31m-[0m[0m on_host_maintenance         = "MIGRATE" [90m-> null[0m[0m
+          [31m-[0m[0m preemptible                 = false [90m-> null[0m[0m
+          [31m-[0m[0m provisioning_model          = "STANDARD" [90m-> null[0m[0m
+            [90m# (1 unchanged attribute hidden)[0m[0m
+        }
+
+      [31m-[0m[0m shielded_instance_config {
+          [31m-[0m[0m enable_integrity_monitoring = true [90m-> null[0m[0m
+          [31m-[0m[0m enable_secure_boot          = false [90m-> null[0m[0m
+          [31m-[0m[0m enable_vtpm                 = true [90m-> null[0m[0m
+        }
+    }
+
+[1m  # google_storage_bucket.bucket[0m will be [1m[31mdestroyed[0m
+[0m  [31m-[0m[0m resource "google_storage_bucket" "bucket" {
+      [31m-[0m[0m default_event_based_hold    = false [90m-> null[0m[0m
+      [31m-[0m[0m effective_labels            = {
+          [31m-[0m[0m "goog-terraform-provisioned" = "true"
+        } [90m-> null[0m[0m
+      [31m-[0m[0m enable_object_retention     = false [90m-> null[0m[0m
+      [31m-[0m[0m force_destroy               = true [90m-> null[0m[0m
+      [31m-[0m[0m id                          = "test-bucket-424-9b123" [90m-> null[0m[0m
+      [31m-[0m[0m labels                      = {} [90m-> null[0m[0m
+      [31m-[0m[0m location                    = "US-CENTRAL1" [90m-> null[0m[0m
+      [31m-[0m[0m name                        = "test-bucket-424-9b123" [90m-> null[0m[0m
+      [31m-[0m[0m project                     = "composed-sun-467220-e1" [90m-> null[0m[0m
+      [31m-[0m[0m project_number              = 807061260421 [90m-> null[0m[0m
+      [31m-[0m[0m public_access_prevention    = "inherited" [90m-> null[0m[0m
+      [31m-[0m[0m requester_pays              = false [90m-> null[0m[0m
+      [31m-[0m[0m self_link                   = "https://www.googleapis.com/storage/v1/b/test-bucket-424-9b123" [90m-> null[0m[0m
+      [31m-[0m[0m storage_class               = "STANDARD" [90m-> null[0m[0m
+      [31m-[0m[0m terraform_labels            = {
+          [31m-[0m[0m "goog-terraform-provisioned" = "true"
+        } [90m-> null[0m[0m
+      [31m-[0m[0m uniform_bucket_level_access = true [90m-> null[0m[0m
+      [31m-[0m[0m url                         = "gs://test-bucket-424-9b123" [90m-> null[0m[0m
+
+      [31m-[0m[0m soft_delete_policy {
+          [31m-[0m[0m effective_time             = "2025-09-25T22:04:21.064Z" [90m-> null[0m[0m
+          [31m-[0m[0m retention_duration_seconds = 604800 [90m-> null[0m[0m
+        }
+    }
+
+[1mPlan:[0m 0 to add, 0 to change, 3 to destroy.
+[0m[0m[1mgoogle_storage_bucket.bucket: Destroying... [id=test-bucket-424-9b123][0m[0m
+[0m[1mgoogle_bigquery_dataset.dataset: Destroying... [id=projects/composed-sun-467220-e1/datasets/dataset_394839482][0m[0m
+[0m[1mgoogle_compute_instance.vm: Destroying... [id=projects/composed-sun-467220-e1/zones/us-central1-c/instances/instance-20250925-203432][0m[0m
+[0m[1mgoogle_bigquery_dataset.dataset: Destruction complete after 0s[0m
+[0m[1mgoogle_storage_bucket.bucket: Destruction complete after 1s[0m
+[0m[1mgoogle_compute_instance.vm: Still destroying... [id=projects/composed-sun-467220-e1/zones/u...1-c/instances/instance-20250925-203432, 00m10s elapsed][0m[0m
+[0m[1mgoogle_compute_instance.vm: Still destroying... [id=projects/composed-sun-467220-e1/zones/u...1-c/instances/instance-20250925-203432, 00m20s elapsed][0m[0m
+[0m[1mgoogle_compute_instance.vm: Still destroying... [id=projects/composed-sun-467220-e1/zones/u...1-c/instances/instance-20250925-203432, 00m30s elapsed][0m[0m
+[0m[1mgoogle_compute_instance.vm: Still destroying... [id=projects/composed-sun-467220-e1/zones/u...1-c/instances/instance-20250925-203432, 00m40s elapsed][0m[0m
+[0m[1mgoogle_compute_instance.vm: Still destroying... [id=projects/composed-sun-467220-e1/zones/u...1-c/instances/instance-20250925-203432, 00m50s elapsed][0m[0m
+[0m[1mgoogle_compute_instance.vm: Still destroying... [id=projects/composed-sun-467220-e1/zones/u...1-c/instances/instance-20250925-203432, 01m00s elapsed][0m[0m
+[0m[1mgoogle_compute_instance.vm: Destruction complete after 1m7s[0m
+[0m[1m[32m
+Destroy complete! Resources: 3 destroyed.
+[0m
